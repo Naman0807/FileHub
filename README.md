@@ -15,7 +15,7 @@ FileHub is a web application designed for easy and secure file management. It al
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/FileHub.git
+git clone https://github.com/Naman0807/FileHub.git
 ```
 
 2. Navigate to the project directory:
