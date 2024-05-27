@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileHub - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/1.png" type="image/x-icon">
+</head>
+
+<body class="font-sans antialiased bg-gray-100 flex flex-col min-h-screen">
+    <header class="text-gray-400 bg-gray-800 shadow-md body-font">
+        <div class="container mx-auto flex p-5 items-center justify-between">
+            <a href="/" class="flex title-font font-medium items-center text-white">
+                <img src="../static/1.png" alt="logo" height="40px" width="40px">
+                <span class="ml-3 text-2xl">FileHub</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="container mx-auto py-8 flex-grow">
+        <div class="max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg">
+            <h1 class="text-3xl text-blue-900 mb-6 text-center">Register</h1>
+            <form action="/register" method="POST" class="space-y-4">
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700">Username:</label>
+                    <input type="text" id="username" name="username"
+                        class="w-full px-4 py-1 border rounded-lg focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700">Password:</label>
+                    <input type="password" id="password" name="password"
+                        class="w-full px-4 py-1 border rounded-lg focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email ID:</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full px-4 py-1 border rounded-lg focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700">Phone No.:</label>
+                    <input type="tel" id="phone" name="phone"
+                        class="w-full px-4 py-1 border rounded-lg focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="role" class="block text-gray-700">Role:</label>
+                    <input type="text" id="role" name="role"
+                        class="w-full px-4 py-1 border rounded-lg focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
+                        required>
+                </div>
+                <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer transition duration-300 ease-in-out">Sign
+                    Up</button>
+            </form>
+            <p class="text-gray-700 mt-4">Already have an account? <a href="/login" class="text-blue-500">Login
+                    here</a>.</p>
+        </div>
+    </div>
+
+    <footer class="footer bg-gray-800 text-white text-center py-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p class="text-sm md:text-base">&copy; 2024 FileHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

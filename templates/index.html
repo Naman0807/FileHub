@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileHub - Home</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/1.png" type="image/x-icon">
+</head>
+
+<body class="font-sans antialiased bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a class="flex items-center ml-2" href="./">
+                    <h1 class="text-2xl md:text-3xl font-bold">FileHub</h1>
+                </a>
+            </div>
+            <nav class="bg-gray-800">
+                <div class="container mx-auto grid grid-cols-3">
+                    <div class="col-span-2 flex justify-start ml-2">
+                        <a href="/"
+                            class="text-white px-2 md:px-4 py-2 rounded-lg text-sm md:text-lg hover:bg-gray-700">Home</a>
+                        <a href="/upload"
+                            class="text-white px-2 md:px-4 py-2 rounded-lg text-sm md:text-lg hover:bg-gray-700">Upload</a>
+                    </div>
+                    <div class="flex justify-end items-center mr-2">
+                        <p class="text-white text-sm md:text-lg px-2 md:px-4 py-2 rounded-md">{{username}}</p>
+                        <a href="/logout" class="ml-2">
+                            <svg class="w-8 md:w-8 h-8 md:h-8 text-white rounded-lg bg-red-500 hover:bg-red-600 p-1"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 12h4M4 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-4">
+        <div class="text-center my-4">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Welcome to FileHub</h1>
+            <p class="text-xl md:text-2xl text-gray-800 mb-8">{{ username }}</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {% for file in files %}
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold mb-4">{{ file | e }}</h2>
+                        <div class="flex justify-between items-center">
+                            <a href="/download_file/{{ file }}"
+                                class="text-blue-500 hover:text-blue-700 font-medium">Download</a>
+                            <form method="post" action="/delete_file/{{ file }}"
+                                onsubmit="return confirm('Are you sure you want to delete this file?');">
+                                <button type="submit"
+                                    class="text-red-500 hover:text-red-700 px-4 py-2 rounded-md border border-red-500 focus:outline-none focus:border-red-700 transition duration-300 ease-in-out">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-gray-800 text-white text-center py-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p class="text-sm md:text-base">&copy; 2024 FileHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

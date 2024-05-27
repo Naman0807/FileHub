@@ -1,0 +1,37 @@
+2024-05-20 23:27:47,032 - INFO - User 664b8be84fdcf20322bdfae4 logged in successfully.
+2024-05-21 00:01:49,148 - INFO - File 'Super_Market.pptx' deleted by user 'naman_080'
+2024-05-21 00:02:00,410 - INFO - File 'up_bike_Project_Documentation.docx' deleted by user 'naman_080'
+2024-05-21 00:02:07,891 - INFO - User 664b8be84fdcf20322bdfae4 logged out.
+
+2024-05-21 21:51:22,834 - WARNING - Failed login attempt for username: naman_080
+2024-05-21 21:59:00,769 - INFO - User 664b8be84fdcf20322bdfae4 logged in successfully.
+2024-05-21 21:59:38,413 - INFO - File '10_result.pdf' uploaded by user 'naman_080'
+2024-05-21 21:59:38,426 - INFO - File 'aadharcard.jpg' uploaded by user 'naman_080'
+2024-05-21 22:00:00,660 - INFO - File 'aadharcard.jpg' deleted by user 'naman_080'
+2024-05-21 22:00:31,184 - INFO - User 664b8be84fdcf20322bdfae4 logged out.
+
+2024-05-21 22:00:51,264 - INFO - User 6643c094c8dcaf811ea34018 logged in successfully.
+2024-05-21 22:01:27,359 - INFO - User 6643c094c8dcaf811ea34018 logged out.
+
+2024-05-21 22:02:13,929 - ERROR - Failed user registration for username: nirbhay - Password must be at least 8 characters long and contain at least one letter, one special character, and one digit.
+2024-05-21 22:02:41,463 - INFO - User nirbhay registered successfully
+2024-05-21 22:02:50,806 - INFO - User 664ccca9e5f469f09a8d03de logged in successfully.
+2024-05-21 22:03:18,773 - INFO - File 'myimg.jpg' uploaded by user 'nirbhay'
+2024-05-21 22:05:36,590 - INFO - File 'myimg.jpg' deleted by user 'nirbhay'
+2024-05-21 22:05:41,855 - INFO - User 664ccca9e5f469f09a8d03de logged out.
+
+2024-05-21 22:11:56,068 - INFO - User 6643c094c8dcaf811ea34018 logged in successfully.
+2024-05-21 22:12:51,086 - INFO - File 'Screenshot_20240521_203239_Instagram.jpg' uploaded by user 'Naman'
+2024-05-21 22:12:56,834 - INFO - File 'Screenshot_20240521_203239_Instagram.jpg' deleted by user 'Naman'
+2024-05-21 22:13:19,989 - WARNING - Failed login attempt for username: nirbhay
+2024-05-21 22:13:38,786 - INFO - User 664ccca9e5f469f09a8d03de logged in successfully.
+2024-05-21 22:14:13,740 - INFO - File '20240518_181739.jpg' uploaded by user 'nirbhay'
+2024-05-21 22:16:28,358 - INFO - User 6643c094c8dcaf811ea34018 logged out.
+
+2024-05-21 22:20:44,063 - INFO - User ABCD registered successfully
+2024-05-21 22:21:01,666 - INFO - User 664cd0e4e5f469f09a8d03df logged in successfully.
+2024-05-21 22:22:40,269 - INFO - User 6643c094c8dcaf811ea34018 logged in successfully.
+2024-05-21 22:22:40,570 - INFO - File 'XIS3109295_1.pdf' uploaded by user 'ABCD'
+2024-05-21 22:23:34,081 - INFO - User 664cd0e4e5f469f09a8d03df logged out.
+
+2024-05-21 22:23:51,177 - INFO - User 664cd0e4e5f469f09a8d03df logged in successfully.
